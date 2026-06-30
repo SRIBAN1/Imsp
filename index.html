@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Nancy ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 1. Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-content">
+            <h1>Loading your surprise...</h1>
+            <div class="pulse-dot"></div>
+        </div>
+    </div>
+
+    <!-- Background Elements (Particles/Hearts) -->
+    <div id="bg-canvas-container"></div>
+
+    <!-- 2. Hero Section -->
+    <section id="hero" class="section">
+        <div class="audio-controls">
+            <button id="music-toggle" aria-label="Play/Pause Music">
+                <span class="icon">🎵</span>
+            </button>
+            <audio id="bg-music" loop>
+                <source src="assets/music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="container glass-card">
+            <h1 class="hero-title">Happy Birthday Nancy ❤️</h1>
+            <h2 id="typing-subheading" class="subheading"></h2>
+            <button id="open-heart-btn" class="cta-btn">Open My Heart</button>
+        </div>
+    </section>
+
+    <!-- 3. Birthday Countdown -->
+    <section id="countdown-section" class="section">
+        <div class="container">
+            <div class="glass-card">
+                <h2 class="section-title">Counting Down to Your Special Day</h2>
+                <div id="countdown" class="countdown-grid">
+                    <div class="countdown-item"><span id="days">00</span><label>Days</label></div>
+                    <div class="countdown-item"><span id="hours">00</span><label>Hours</label></div>
+                    <div class="countdown-item"><span id="minutes">00</span><label>Minutes</label></div>
+                    <div class="countdown-item"><span id="seconds">00</span><label>Seconds</label></div>
+                </div>
+                <div id="birthday-msg" class="hidden">
+                    <h2 class="celebration-text">🎉 Happy Birthday My Love 🎉</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Reasons I Love You -->
+    <section id="reasons" class="section">
+        <div class="container">
+            <h2 class="section-title">Reasons I Love You</h2>
+            <div class="reasons-grid">
+                <div class="reason-card glass-card reveal">❤️ Your smile</div>
+                <div class="reason-card glass-card reveal">❤️ Your kindness</div>
+                <div class="reason-card glass-card reveal">❤️ Your caring heart</div>
+                <div class="reason-card glass-card reveal">❤️ The happiness you bring me</div>
+                <div class="reason-card glass-card reveal">❤️ You make every day special</div>
+                <div class="reason-card glass-card reveal">❤️ You are my safe place</div>
+                <div class="reason-card glass-card reveal">❤️ Everything about you</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Our Story (Timeline) -->
+    <section id="story" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal left">
+                    <div class="timeline-content glass-card">
+                        <h3>❤️ The day we met</h3>
+                        <p>Where it all began...</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal right">
+                    <div class="timeline-content glass-card">
+                        <h3>🌸 The day I realized I loved you</h3>
+                        <p>A moment I'll never forget.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal left">
+                    <div class="timeline-content glass-card">
+                        <h3>💕 Every moment with you became special</h3>
+                        <p>Making memories together.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal right">
+                    <div class="timeline-content glass-card">
+                        <h3>💍 Forever together</h3>
+                        <p>To our beautiful future.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Love Letter -->
+    <section id="love-letter" class="section">
+        <div class="container">
+            <div class="envelope-wrapper">
+                <div id="envelope" class="envelope">
+                    <div class="flap"></div>
+                    <div class="pocket"></div>
+                    <div id="letter" class="letter">
+                        <div class="letter-text handwriting">
+                            <div id="letter-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="instruction">Click the envelope to open</p>
+        </div>
+    </section>
+
+    <!-- 7. Birthday Cake -->
+    <section id="cake-section" class="section">
+        <div class="container">
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="plate"></div>
+                    <div class="layer layer-bottom"></div>
+                    <div class="layer layer-middle"></div>
+                    <div class="layer layer-top"></div>
+                    <div class="icing"></div>
+                    <div class="drip drip1"></div>
+                    <div class="drip drip2"></div>
+                    <div class="drip drip3"></div>
+                    <div class="candles">
+                        <div class="candle">
+                            <div class="flame"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="blow-candles-btn" class="cta-btn">Blow the Candles</button>
+        </div>
+    </section>
+
+    <!-- 8. Final Surprise -->
+    <section id="final-surprise" class="section">
+        <div class="container glass-card">
+            <h1 class="heartbeat-title">I Love You Nancy ❤️</h1>
+            <button id="forever-btn" class="cta-btn">Forever & Always</button>
+            <div id="final-message" class="hidden">
+                <p class="final-text">
+                    "You are my today,<br>
+                    my tomorrow,<br>
+                    and every beautiful tomorrow after that.<br><br>
+                    Happy Birthday, My Love. ❤️"
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Footer -->
+    <footer>
+        <p>Made with ❤️ only for Nancy.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
